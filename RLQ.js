@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-    const stopTime = new Date("2025-10-03T18:48:00+01:00");
+    const stopTime = new Date("2025-10-05T18:48:00+01:00");
 
     if (new Date() >= stopTime) {
         console.log("⏹ Script");
