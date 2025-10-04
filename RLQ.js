@@ -179,7 +179,7 @@
         if (conditionMet && insertButton()) {
             clearInterval(interval); // Stop checking after button is added
         }
-    }, 340);
+    }, 500);
     // Button click event to run extraction and show popup
     button.addEventListener('click', async () => {
         // Create and display progress element
