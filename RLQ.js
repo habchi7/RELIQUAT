@@ -162,7 +162,6 @@
         const lastCell = table.querySelector('tr:first-child td.last') || table.querySelector('tr:first-child td:last-child');
         if (lastCell && !lastCell.contains(button)) {
             lastCell.appendChild(button);
-            console.log('✅ Button added inside table.');
             return true;
         }
         return false;
@@ -821,5 +820,4 @@
   
 /////////////////////////////////////////////////////////////////////////////////////
   
-    console.log("✅ Script");
 })();
