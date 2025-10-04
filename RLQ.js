@@ -151,7 +151,7 @@
         fontSize: "16px"
     });
     button.textContent = 'Comptabiliser Reliquat & Complément';
-    button.title = 'Click to open the facture processing form';
+    button.title = 'Comptabiliser Reliquat & Complément';
     // --- Step 7: Insert Button into Table ---
     function insertButton() {
         const table = document.querySelector('table.s_pr.swt-tf.swt-vt.s_db');
