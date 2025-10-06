@@ -1,15 +1,6 @@
 (function() {
     'use strict';
-
-    const stopTime = new Date("2028-10-01T18:48:00+01:00");
-
-    if (new Date() >= stopTime) {
-        console.log("⏹ Script");
-        return; 
-    }
-  
-/////////////////////////////////////////////////////////////////////////////////////
-  
+    // Utility: wait for ms
     function wait(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
@@ -151,7 +142,7 @@
         fontSize: "16px"
     });
     button.textContent = 'Comptabiliser Reliquat & Complément';
-    button.title = 'Comptabiliser Reliquat & Complément';
+    button.title = 'Click to open the facture processing form';
     // --- Step 7: Insert Button into Table ---
     function insertButton() {
         const table = document.querySelector('table.s_pr.swt-tf.swt-vt.s_db');
@@ -162,6 +153,7 @@
         const lastCell = table.querySelector('tr:first-child td.last') || table.querySelector('tr:first-child td:last-child');
         if (lastCell && !lastCell.contains(button)) {
             lastCell.appendChild(button);
+            console.log('✅ Button added inside table.');
             return true;
         }
         return false;
@@ -815,9 +807,5 @@
         if (!document.getElementById('tableActionBtn')) {
             createFloatingButton();
         }
-    }, 10000); 
-  
-  
-/////////////////////////////////////////////////////////////////////////////////////
-  
+    }, 10000);
 })();
