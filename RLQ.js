@@ -663,7 +663,7 @@
                     ],
                     [
                         data.etablissement, today, 'OPD', 'OD', '445500',
-                        '', `TVA. ${libellePieceBase}`, data.affaire, '', '0',
+                        '', `COMPL-TVA. ${libellePieceBase}`, data.affaire, '', '0',
                         formatNumber(tvaDiffNum), 'C', ''
                     ],
                     [
@@ -678,7 +678,7 @@
                     ],
                     [
                         data.etablissement, today, 'OPD', 'OD', '445810',
-                        '', `TSP. ${libellePieceBase}`, data.affaire, '', '0',
+                        '', `COMPL-TSP. ${libellePieceBase}`, data.affaire, '', '0',
                         formatNumber(tspDiffNum), 'C', ''
                     ]
                 ];
@@ -706,7 +706,7 @@
                     ],
                     [
                         data.etablissement, today, 'OPD', 'OD', '445500',
-                        '', `TVA. ${libellePieceBase}`, data.affaire, '', '0',
+                        '', `RELIQUAT-TVA. ${libellePieceBase}`, data.affaire, '', '0',
                         formatNumber(-tvaDefNum), 'C', ''
                     ],
                     [
@@ -721,7 +721,7 @@
                     ],
                     [
                         data.etablissement, today, 'OPD', 'OD', '445810',
-                        '', `TSP. ${libellePieceBase}`, data.affaire, '', '0',
+                        '', `RELIQUAT-TSP. ${libellePieceBase}`, data.affaire, '', '0',
                         formatNumber(-tspDefNum), 'C', ''
                     ],
                     [
