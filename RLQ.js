@@ -553,10 +553,10 @@
                     B = 0.04;
                     break;
                 case 'NA':
-                    B = 0.01;
+                    B = 0.025;
                     break;
                 case 'SA':
-                    B = 0.05;
+                    B = 0.03;
                     break;
                 default:
                     B = 0;
